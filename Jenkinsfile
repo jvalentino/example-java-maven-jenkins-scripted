@@ -6,12 +6,6 @@ node {
       }    
   }       
 
-  stage('Build') {
-      withMaven(mavenSettingsFilePath: 'settings.xml') {
-        sh "./mvnw verify -Drevision=1.${BUILD_NUMBER}"
-      }  
-  }   
-
   stage('Deploy') {
      withCredentials([usernamePassword(
         credentialsId: 'github-publish-maven', 
