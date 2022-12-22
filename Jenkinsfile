@@ -8,7 +8,7 @@ node {
 
   stage('Build') {
       withMaven(mavenSettingsFilePath: 'settings.xml') {
-        sh './mvnw verify'
+        sh "./mvnw verify -Drevision=1.${BUILD_NUMBER}"
       }  
   }   
 

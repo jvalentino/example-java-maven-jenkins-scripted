@@ -22,7 +22,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/jvalentino/example-java-maven-jenkins-freestyle</url>
+      <url>https://maven.pkg.github.com/jvalentino/example-java-maven-jenkins-scripted</url>
     </repository>
   </distributionManagement>
 
